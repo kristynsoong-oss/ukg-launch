@@ -1,10 +1,11 @@
 <!DOCTYPE html>
   <html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=ukghc://run">
-  </head>
+  <head></head>
   <body>
-    <script>window.location.href = "ukghc://run";</script>
-    <p>Launching HCD Lite...</p>
+    <script>
+      var params = window.location.search;
+      window.location.href = "ukghc://run" + params;
+      setTimeout(function() { window.close(); }, 500);
+    </script>
   </body>
   </html>
